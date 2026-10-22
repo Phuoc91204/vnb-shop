@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>VNB Shop - Vợt Cầu Lông & Giày Cầu Lông Chính Hãng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <div id="header"></div>
+
+    <!-- Hero Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img
+          width="1920"
+          height="640"
+          src="img/vs-vot-cau-long_1764274302.webp"
+          alt="vs vot cau long"
+        /><img
+          width="1920"
+          height="640"
+          src="img/grpht-thrttl_1759089897.webp"
+          alt="giay grpht thrttl chính hãng"
+        />
+        <img width="1920" height="640" src="img/62-1-_1764612898.webp" alt="Ưu đãi siêu sale" />
+        <img
+          width="1920"
+          height="640"
+          src="img/yonex-astrox-99_1757731351.webp"
+          alt="yonex astrox 99"
+        />
+      </div>
+      <button class="sl-btn prev" aria-label="Slide trước">‹</button>
+      <button class="sl-btn next" aria-label="Slide sau">›</button>
+      <div class="dots"></div>
+    </div>
+
+    <!-- Flash Sale Ticker -->
+    <div class="flash">
+      <div class="flash-inner">
+        <span class="flash-title">FLASH SALE HÔM NAY</span>
+        <div class="flash-countdown">
+          <span>Kết thúc sau:</span>
+          <div id="countdown" class="countdown-boxes"></div>
+        </div>
+        <a class="btn btn-flash" id="btnPromo" href="products.html?tag=sale">Săn Deal Ngay →</a>
+      </div>
+    </div>
+
+    <!-- Service Commitments (USP) Bar -->
+    <section class="features-bar">
+      <div class="wrap features-grid">
+        <div class="feature-item">
+          <div class="feature-num">01</div>
+          <div class="feature-text">
+            <h4>Giao hàng toàn quốc</h4>
+            <p>Miễn phí đơn từ 500k, nhận hàng kiểm tra</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">02</div>
+          <div class="feature-text">
+            <h4>100% Chính hãng</h4>
+            <p>Cam kết bồi thường gấp 10 lần nếu phát hiện giả</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">03</div>
+          <div class="feature-text">
+            <h4>Đan vợt chuẩn quốc tế</h4>
+            <p>Căng máy điện tử Yonex chính xác từng lbs</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">04</div>
+          <div class="feature-text">
+            <h4>Đổi mới 7 ngày</h4>
+            <p>1 đổi 1 nhanh chóng nếu phát sinh lỗi kỹ thuật</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="wrap">
+      <!-- Sản phẩm nổi bật -->
+      <section class="sec">
+        <div class="section-header">
+          <h2 class="title">Sản Phẩm Nổi Bật</h2>
+          <p class="section-subtitle">
+            Khám phá các sản phẩm cầu lông cao cấp được săn đón nhiều nhất
+          </p>
+        </div>
+        <div class="tabs" id="tabs"></div>
+        <div class="grid big" id="home-grid"></div>
+        <!-- Vùng hiển thị tương thích với mã mẫu huongdanasm2 -->
+        <div id="products-list" style="display: none"></div>
+        <div class="more">
+          <a class="btn btn-lg" href="products.html">Xem tất cả 24+ sản phẩm →</a>
+        </div>
+      </section>
+
+      <!-- Danh mục sản phẩm -->
+      <section class="sec">
+        <div class="section-header">
+          <h2 class="title">Danh Mục Nổi Bật</h2>
+          <p class="section-subtitle">Tìm kiếm nhanh chóng theo phân loại trang thiết bị thi đấu</p>
+        </div>
+        <div class="cats" id="cats"></div>
+      </section>
+
+      <!-- Liên hệ & Hỗ trợ -->
+      <section class="sec" id="lienhe">
+        <div class="section-header">
+          <h2 class="title">Liên Hệ Với VNB</h2>
+          <p class="section-subtitle">
+            Đội ngũ chuyên viên tư vấn luôn sẵn sàng hỗ trợ bạn chọn dụng cụ phù hợp
+          </p>
+        </div>
+
+        <div class="contact-card-wrap">
+          <div class="contact-info-panel">
+            <h3>HỆ THỐNG VNB SPORTS</h3>
+            <p class="contact-desc">
+              Cửa hàng cầu lông hàng đầu Việt Nam với hơn 50 chi nhánh khắp toàn quốc.
+            </p>
+            <div class="contact-item">
+              <div>
+                <b>Trụ sở chính:</b>
+                <p>Số 123 Đường Cầu Lông, Quận 1, TP. Hồ Chí Minh</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <b>Hotline tư vấn:</b>
+                <p>0123.456.789 (Hỗ trợ 8h00 - 21h30)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <b>Email hỗ trợ:</b>
+                <p>info@shopvnb.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <b>Giờ mở cửa:</b>
+                <p>Thứ 2 - Chủ Nhật: 08:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="box contact-form-panel" id="contactForm" novalidate>
+            <h3>GỬI YÊU CẦU TƯ VẤN</h3>
+            <div class="field">
+              <label>Họ và tên (*)</label>
+              <input name="name" placeholder="Ví dụ: Nguyễn Văn A" /><span class="err"></span>
+            </div>
+            <div class="field">
+              <label>Địa chỉ Email (*)</label>
+              <input name="email" type="email" placeholder="Ví dụ: nguyenvana@gmail.com" /><span
+                class="err"
+              ></span>
+            </div>
+            <div class="field">
+              <label>Số điện thoại (*)</label>
+              <input name="phone" placeholder="Ví dụ: 0912345678" /><span class="err"></span>
+            </div>
+            <div class="field">
+              <label>Nội dung cần hỗ trợ (*)</label>
+              <textarea
+                name="msg"
+                rows="4"
+                placeholder="Nhập câu hỏi hoặc sản phẩm cần tư vấn chi tiết..."
+              ></textarea>
+              <span class="err"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-contact-submit">
+              Gửi tin nhắn liên hệ
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Giỏ hàng của bạn | VNB Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="cart">
+    <div id="header"></div>
+
+    <main class="wrap">
+      <div class="breadcrumb" style="margin-top: 18px">
+        <a href="index.html">Trang chủ</a> / <span>Giỏ hàng</span>
+      </div>
+
+      <div class="cart-page-header">
+        <h1 class="page-main-title">Giỏ Hàng Của Bạn</h1>
+        <p class="page-main-subtitle">Kiểm tra danh sách trang bị đã chọn và áp dụng mã ưu đãi</p>
+      </div>
+
+      <!-- Khung hiển thị danh sách giỏ hàng theo mẫu chuẩn huongdanasm2 -->
+      <div id="cart-items" class="cart" style="display: none"></div>
+      <div id="cart"></div>
+
+      <div class="cart-toolbar" id="cartToolbar" style="display: none">
+        <a class="btn btn-outline" href="products.html">← Tiếp tục mua sắm</a>
+        <button class="btn btn-dark" id="clearCart">Xóa toàn bộ giỏ hàng</button>
+      </div>
+
+      <div class="sum" id="cartSummary" style="display: none">
+        <!-- Box Mã Giảm Giá -->
+        <div class="box coupon-card" style="margin: 0; width: auto">
+          <div class="card-head-line">
+            <h3>MÃ GIẢM GIÁ</h3>
+          </div>
+          <p style="font-size: 14px; color: #64748b; margin-bottom: 12px">
+            Chọn nhanh mã ưu đãi bên dưới hoặc tự nhập mã:
+          </p>
+          <div class="voucher-chips">
+            <button type="button" class="chip-btn" data-coupon="VNB10">
+              <b>VNB10</b> (Giảm 10%)
+            </button>
+            <button type="button" class="chip-btn" data-coupon="SALE20">
+              <b>SALE20</b> (Giảm 20%)
+            </button>
+          </div>
+          <div class="coupon">
+            <input id="couponIn" placeholder="Nhập mã ưu đãi..." />
+            <button class="btn btn-primary" id="applyCoupon">Áp dụng</button>
+          </div>
+          <div id="couponMsg" style="font-size: 13px; margin-top: 8px; font-weight: 600"></div>
+        </div>
+
+        <!-- Box Tóm Tắt & Thanh Toán -->
+        <div class="box summary-card" style="margin: 0; width: auto">
+          <div class="card-head-line">
+            <h3>TỔNG ĐƠN HÀNG</h3>
+          </div>
+          <div id="summary"></div>
+          <a href="checkout.html" class="btn btn-checkout-lg" id="toCheckout">
+            TIẾN HÀNH THANH TOÁN →
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

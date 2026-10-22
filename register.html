@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Đăng ký tài khoản mới | VNB Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="auth" class="auth-page-bg">
+    <div id="header"></div>
+
+    <main class="wrap auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <img src="img/logovnb.svg" alt="VNB Sports" class="auth-logo" />
+          <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+          <p class="auth-subtitle">Trở thành thành viên VNB để nhận ngay hàng ngàn ưu đãi</p>
+        </div>
+
+        <form id="register-form" data-type="register" novalidate>
+          <div class="field">
+            <label for="full-name">Họ và tên (*)</label>
+            <input id="full-name" name="name" placeholder="Ví dụ: Nguyễn Văn An" />
+            <span class="err"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Địa chỉ Email (*)</label>
+            <input id="email" name="email" type="email" placeholder="Ví dụ: vanan@gmail.com" />
+            <span class="err"></span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Số điện thoại (*)</label>
+            <input id="phone" name="phone" placeholder="10 chữ số (bắt đầu bằng 0)" />
+            <span class="err"></span>
+          </div>
+
+          <div class="field">
+            <label for="password">Mật khẩu (*)</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Tối thiểu 6 ký tự..."
+            />
+            <span class="err"></span>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Xác nhận mật khẩu (*)</label>
+            <input
+              id="confirmPassword"
+              name="repass"
+              type="password"
+              placeholder="Nhập lại mật khẩu..."
+            />
+            <span class="err"></span>
+          </div>
+
+          <!-- Các phần tử hỗ trợ tương thích selector huongdanasm2 -->
+          <email style="display: none"></email>
+          <password style="display: none"></password>
+          <confirmPassword style="display: none"></confirmPassword>
+
+          <div id="authMsg" class="auth-alert-err"></div>
+
+          <button type="submit" class="btn btn-auth-submit">TẠO TÀI KHOẢN NGAY</button>
+
+          <p class="auth-switch-text">
+            Đã có tài khoản? <a href="login.html" id="sw">Đăng nhập tại đây</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const l = document.getElementById("sw");
+        if (l) l.href += location.search;
+      });
+    </script>
+
+    <div id="footer"></div>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
